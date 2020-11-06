@@ -222,20 +222,19 @@ if __name__ == "__main__":
 
     # check to make sure the domain and instance exist
     if args.bulk_extraction_file:
+        import csv
         bulk_extraction_file = os.path.abspath(args.bulk_extraction_file)
 
         features = {}
         with open(bulk_extraction_file, 'r') as f:
             first = True
-            for line in f:
+            lines = csv.reader(f)
+            for components in lines:
                 if not first:
-                    line = line.lstrip().rstrip()
-                    components = line.split(",")
-                    components = map(lambda x: x.lstrip('"').rstrip('"'), components)
+                    components = map(lambda x: x.lstrip().rstrip().lstrip('"').rstrip('"'), components)
 
                     domain_file = os.path.abspath(components[0])
                     instance_file = os.path.abspath(components[1])
-
                     instance_features = top_level_extractor.extract(domain_file, instance_file)
                     features.update(instance_features)
                 else:
