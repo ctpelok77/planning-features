@@ -1,0 +1,5 @@
+domain, problem
+"/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/logistics00/domain.pddl", "/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/logistics00/probLOGISTICS-4-0.pddl"
+"/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/blocks/domain.pddl", "/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/blocks/probBLOCKS-12-1.pddl"
+"/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/woodworking-opt08-strips/domain.pddl", "/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/woodworking-opt08-strips/p01.pddl"
+"/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/woodworking-opt11-strips/domain.pddl", "/homes/hny1/US1J6721/software/downward-benchmarks-ipc2018/woodworking-opt11-strips/p01.pddl"
